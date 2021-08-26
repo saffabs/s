@@ -1,0 +1,5 @@
+import request 
+from bs4 import BeautifulSoup
+req=request.get("https://www.geeksforgeeks.org/")
+soup=BeautifulSoup(req.content,"html.parser")
+print(soup.get_text())
